@@ -1,0 +1,34 @@
+$red: #ff001d
+$rest: 'Nixie One', cursive
+$titre: 'Great Vibes', cursive
+
+body
+    margin: 0
+h1, h2, h3,
+    color: $red
+    font-family: $titre
+h1
+    font-size: 45px
+    margin-bottom: 0px
+    margin-top: 5px
+    @media screen and (max-width: 800px)
+        font-size: 35px
+    @media screen and (max-width: 500px)
+        font-size: 25px
+h2
+    font-size: 35px
+    @media screen and (max-width: 800px)
+        font-size: 35px
+    @media screen and (max-width: 500px)
+        font-size: 25px
+
+#page
+    height: 100vh
+
+.center
+    position: absolute
+    top: 100px
+    height: calc(100% - 142px)
+    width: 100%
+    @media screen and (max-width: 800px)
+        height: calc(100% - 127px)
