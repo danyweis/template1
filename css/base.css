@@ -1,61 +1,270 @@
-body { margin: 0; }
+body {
+  margin: 0; }
 
-h1, h2, h3 { color: #ff001d; font-family: "Great Vibes", cursive; }
+h1, h2, h3 {
+  color: #ff001d;
+  font-family: "Great Vibes", cursive; }
 
-h1 { font-size: 45px; margin-bottom: 0px; margin-top: 5px; }
-@media screen and (max-width: 800px) { h1 { font-size: 35px; } }
-@media screen and (max-width: 500px) { h1 { font-size: 25px; } }
+h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+  margin-top: 5px; }
+  @media screen and (max-width: 800px) {
+    h1 {
+      font-size: 35px; } }
+  @media screen and (max-width: 500px) {
+    h1 {
+      font-size: 25px; } }
 
-h2 { font-size: 35px; }
-@media screen and (max-width: 800px) { h2 { font-size: 35px; } }
-@media screen and (max-width: 500px) { h2 { font-size: 25px; } }
+h2 {
+  font-size: 35px; }
+  @media screen and (max-width: 800px) {
+    h2 {
+      font-size: 35px; } }
+  @media screen and (max-width: 500px) {
+    h2 {
+      font-size: 25px; } }
 
-#page { height: 100vh; }
+h3 {
+  font-size: 30px; }
+  @media screen and (max-width: 800px) {
+    h3 {
+      font-size: 25px; } }
+  @media screen and (max-width: 500px) {
+    h3 {
+      font-size: 20px; } }
 
-.center { position: absolute; top: 100px; height: calc(100% - 142px); width: 100%; }
-@media screen and (max-width: 800px) { .center { height: calc(100% - 127px); } }
+#page {
+  height: 100vh; }
 
-#header { position: fixed; height: 100px; width: 100%; border-bottom: 2px solid #ff001d; }
+.center {
+  position: absolute;
+  top: 100px;
+  height: calc(100% - 142px);
+  width: 100%; }
+  @media screen and (max-width: 800px) {
+    .center {
+      height: calc(100% - 127px); } }
 
-.leTitre { text-align: center; padding: 15px 60px; }
+#header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  border-bottom: 2px solid #ff001d; }
 
-#home { position: absolute; right: 15px; top: 15px; height: 64px; width: 64px; background-image: url("../image/homeS.png"); }
-@media screen and (max-width: 800px) { #home { top: 25px; height: 32px; width: 32px; background-size: contain; } }
+.leTitre {
+  text-align: center;
+  padding: 15px 60px; }
 
-#topLeft { position: absolute; top: 2px; height: 48%; width: 48%; border-bottom: 2px solid #ff001d; border-right: 2px solid #ff001d; overflow: auto; }
+#home {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  height: 64px;
+  width: 64px;
+  background-image: url("../image/homeS.png");
+  cursor: pointer; }
+  @media screen and (max-width: 800px) {
+    #home {
+      top: 25px;
+      height: 32px;
+      width: 32px;
+      background-size: contain; } }
 
-.histoir { position: absolute; z-index: 10; height: 100%; width: 100%; background-image: url("../image/cameraV1.jpg"); background-size: cover; background-position: center; }
+#topLeft {
+  position: absolute;
+  top: 2px;
+  height: 48%;
+  width: 48%;
+  border-bottom: 2px solid #ff001d;
+  border-right: 2px solid #ff001d;
+  overflow: auto; }
 
-.bgTL { display: none; width: 100%; }
+.histoir {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-image: url("../image/cameraV1.jpg");
+  background-size: cover;
+  background-position: center; }
 
-.flexUp { width: 100%; display: flex; }
+.bgTL {
+  display: none;
+  width: 100%;
+  text-align: justify; }
 
-.TLimg1 { min-width: 500px; height: auto; background-image: url("../image/cameraV2.jpg"); background-size: cover; background-position: center; }
+.TLimgL {
+  width: 50%;
+  height: 50%;
+  float: left;
+  margin: 10px; }
 
-.flexMid { width: 100%; display: flex; }
+.TLimgR {
+  width: 50%;
+  height: 50%;
+  float: right;
+  margin: 10px; }
 
-.TLimg2 { min-width: 500px; height: auto; background-image: url("../image/cameraV3.jpg"); background-size: cover; background-position: center; }
+.title {
+  text-align: center; }
 
-.flexDown { width: 100%; display: flex; }
+#topRight {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  height: 48%;
+  width: 48%;
+  border-bottom: 2px solid #ff001d;
+  border-left: 2px solid #ff001d;
+  overflow: auto; }
 
-.TLimg3 { min-width: 500px; height: auto; background-image: url("../image/cameraV4.jpg"); background-size: cover; background-position: center; }
+.paysage {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-image: url("../image/camera1.jpg");
+  background-size: cover;
+  background-position: center; }
 
-.title { text-align: center; }
+.bgTR {
+  display: none;
+  padding: 0px 10px 10px 10px;
+  text-align: justify; }
 
-#topRight { position: absolute; top: 2px; right: 0; height: 48%; width: 48%; border-bottom: 2px solid #ff001d; border-left: 2px solid #ff001d; }
+.TRimg {
+  max-width: 100%;
+  max-height: 300px;
+  margin: auto; }
 
-.paysage { position: absolute; z-index: 10; height: 100%; width: 100%; background-image: url("../image/camera1.jpg"); background-size: cover; background-position: center; }
+#bottomLeft {
+  position: absolute;
+  bottom: 0;
+  height: 48%;
+  width: 48%;
+  border-top: 2px solid #ff001d;
+  border-right: 2px solid #ff001d;
+  overflow: auto; }
 
-#bottomLeft { position: absolute; bottom: 0; height: 48%; width: 48%; border-top: 2px solid #ff001d; border-right: 2px solid #ff001d; }
+.today {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-image: url("../image/cameraVBG.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: justify; }
 
-.today { position: absolute; z-index: 10; height: 100%; width: 100%; background-image: url("../image/cameraVBG.jpg"); background-size: cover; background-position: center; }
+.bgBL {
+  display: none; }
 
-#bottomRight { position: absolute; bottom: 0; right: 0; height: 48%; width: 48%; border-top: 2px solid #ff001d; border-left: 2px solid #ff001d; }
+.cellphone1 {
+  margin: 10px;
+  height: 150px;
+  width: auto;
+  float: left; }
+  @media screen and (max-width: 500px) {
+    .cellphone1 {
+      height: 100px;
+      width: auto; } }
 
-.material { position: absolute; z-index: 10; height: 100%; width: 100%; background-image: url("../image/equipmentBG.jpg"); background-size: cover; background-position: center; }
+.cellphone2 {
+  margin: 10px;
+  height: 150px;
+  width: auto;
+  float: right; }
+  @media screen and (max-width: 500px) {
+    .cellphone2 {
+      height: 100px;
+      width: auto; } }
 
-.copyRight { position: fixed; width: 100%; height: 40px; text-align: center; bottom: 0; border-top: 2px solid #ff001d; }
-@media screen and (max-width: 800px) { .copyRight { height: 25px; } }
+.gopro {
+  margin: 10px;
+  height: 150px;
+  width: auto;
+  float: left; }
+  @media screen and (max-width: 500px) {
+    .gopro {
+      height: 100px;
+      width: auto; } }
 
-.CR { margin-top: 8px; }
-@media screen and (max-width: 800px) { .CR { font-size: 12px; } }
+.droneUp {
+  margin: 10px;
+  height: 150px;
+  width: auto;
+  float: right; }
+  @media screen and (max-width: 500px) {
+    .droneUp {
+      height: 100px;
+      width: auto; } }
+
+.droneDown {
+  margin: 10px;
+  height: 150px;
+  width: auto;
+  float: left; }
+  @media screen and (max-width: 500px) {
+    .droneDown {
+      height: 100px;
+      width: auto; } }
+
+#bottomRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 48%;
+  width: 48%;
+  border-top: 2px solid #ff001d;
+  border-left: 2px solid #ff001d;
+  overflow: auto; }
+
+.material {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-image: url("../image/equipmentBG.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: justify; }
+
+.bgBR {
+  display: none;
+  padding: 0px 10px; }
+
+.equipement1 {
+  max-width: 75%;
+  height: 300px;
+  background-image: url("../image/cameraMateriel1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: auto; }
+
+.equipement2 {
+  max-width: 85%;
+  height: 300px;
+  background-image: url("../image/equipment3.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: auto; }
+
+.copyRight {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  bottom: 0;
+  border-top: 2px solid #ff001d; }
+  @media screen and (max-width: 800px) {
+    .copyRight {
+      height: 25px; } }
+
+.CR {
+  margin-top: 8px; }
+  @media screen and (max-width: 800px) {
+    .CR {
+      font-size: 12px; } }
+
+/*# sourceMappingURL=base.css.map */
