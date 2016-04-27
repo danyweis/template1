@@ -71,6 +71,23 @@ h3 {
       width: 32px;
       background-size: contain; } }
 
+#danyweis {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: 64px;
+  width: 64px;
+  background-image: url("../image/screanman1.png");
+  background-size: contain;
+  background-position: center;
+  cursor: pointer; }
+  @media screen and (max-width: 800px) {
+    #danyweis {
+      top: 25px;
+      height: 32px;
+      width: 32px;
+      background-size: contain; } }
+
 #topLeft {
   position: absolute;
   top: 2px;
@@ -269,4 +286,4 @@ h3 {
     .CR {
       font-size: 12px; } }
 
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=temp.css.map */

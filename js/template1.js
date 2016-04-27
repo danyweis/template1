@@ -44,6 +44,7 @@ $(function(){
         $bgBR.fadeOut(1500);
 
     });
+
     $topRight.on('click', function(){
         $topRight.animate({height: '90%', width: '90%'},1500);
         $bottomLeft.animate({height: '8%', width: '8%'},1500);
